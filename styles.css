@@ -1,1 +1,49 @@
-/* your code */
+ table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the table header */
+        thead {
+            background-color: #4CAF50; /* Green background for the header */
+            color: white; /* White text color */
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd; /* Light border for the cells */
+        }
+
+        /* Style for alternating rows */
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2; /* Light gray for odd rows */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff; /* White for even rows */
+        }
+
+        /* Highlight important cells (like Total Cases or Deaths) */
+        .high-stat {
+            font-weight: bold;
+            color: #d9534f; /* Red color for important stats */
+        }
+
+        /* Hover effect for rows */
+        tr:hover {
+            background-color: #ddd; /* Light gray on hover */
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
